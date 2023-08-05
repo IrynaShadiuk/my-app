@@ -1,0 +1,142 @@
+$light-bg-color: #f2ede8;
+$light-border-color: #ccc;
+$light-text-color: #333;
+$light-button-bg-color: #887d40d2;
+$light-button-hover-color: #7a6f0a;
+$light-feedback-input-bg-color: rgba(242, 237, 232, 0.8);
+
+$dark-bg-color: #2c2c2c;
+$dark-border-color: #555;
+$dark-text-color: #fff;
+$dark-button-bg-color: #a0945c;
+$dark-button-hover-color: #7f772d;
+
+
+.feedback-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  background-color: $light-bg-color;
+
+  .feedback-form {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid $light-border-color;
+    box-shadow: 0 0 10px $light-border-color;
+
+    h2 {
+      text-align: center;
+      color: $light-text-color;
+      margin-bottom: 10px;
+    }
+
+    .form-ft {
+      display: block;
+      width: 90%;
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid $light-border-color;
+      border-radius: 4px;
+    }
+
+    #feedback-input {
+      resize: vertical;
+      height: 120px;
+      background-color: $light-feedback-input-bg-color;
+      border: 1px solid $light-border-color;
+      color: $light-text-color;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 10px;
+      resize: vertical;
+    }
+
+    .btn-sub {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: $light-button-bg-color;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $light-button-hover-color;
+      }
+    }
+  }
+
+  .feedback-list {
+    h2 {
+      margin-bottom: 10px;
+      text-align: center;
+      color: $light-text-color;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        strong {
+          font-weight: bold;
+        }
+
+        span {
+          font-style: italic;
+          color: #777;
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    background-color: $dark-bg-color;
+
+    .feedback-form {
+      border-color: $dark-border-color;
+      box-shadow: 0 0 10px $dark-border-color;
+
+      h2 {
+        color: $dark-text-color;
+      }
+
+      .form-ft {
+        border-color: $dark-border-color;
+      }
+
+      #feedback-input {
+        border-color: $dark-border-color;
+      }
+
+      .btn-sub {
+        background-color: $dark-button-bg-color;
+        color: #0e1b2e;
+
+        &:hover {
+          background-color: $dark-button-hover-color;
+        }
+      }
+    }
+
+    .feedback-list {
+      h2 {
+        color: $dark-text-color;
+      }
+
+      li {
+        color: #fff;
+      }
+    }
+  }
+}

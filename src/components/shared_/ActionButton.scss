@@ -1,0 +1,32 @@
+.sign-in {
+    position: relative;
+  
+    &__button {
+      cursor: pointer;
+      width: 100px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: whitesmoke;
+      color: rgb(45, 32, 16);
+      border: none;
+      border-radius: 10px;
+      outline-color: transparent;
+      outline-style: solid;
+      box-shadow: 0 0 0 4px rgb(45, 32, 16);
+      transition: 0.7s;
+      right: 10px;
+    }
+  }
+  .sabmit-btn {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #ffd700;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }

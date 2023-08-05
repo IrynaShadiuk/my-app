@@ -1,0 +1,22 @@
+.text-block {
+    border: 2px solid #a96a37;
+    padding: 20px;
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+  
+    &.expanded {
+      font-size: 24px;
+    }
+  
+    p {
+      margin-bottom: 10px;
+    }
+  
+    button {
+      background-color: #a96a37;
+      color: #ffffff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+  }
